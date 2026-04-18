@@ -97,6 +97,13 @@ table {
       .pseudo-list li:nth-child(even) {
         background-color: white;
       }
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 1.3s ease;
+      }
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
     </style>
     </head>
     <body>
@@ -118,6 +125,7 @@ table {
         <li>60 degree wedge</li>
         <li>Putter</li>
       </ul>
+      <img src="Max_GOLF.jpg" alt="Sample Image" class="filter-image">
     <table>
     <tr>
         <th>Past courses</th>
