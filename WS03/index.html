@@ -72,7 +72,30 @@ table {
       }
       
       .transition-button:hover {
-        background-color: rgb(59, 51, 51);
+        background-color: rgb(5, 210, 247);
+      }
+      .animation-box {
+        width: 70px;
+        height: 30px;
+        background-color: rgb(255, 72, 0);
+        position: relative;
+        animation: move 4s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 100px;
+        }
+        to {
+          left: 400px;
+        }
+      }
+      .pseudo-list li:nth-child(odd) {
+        background-color: rgb(4, 255, 25);
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
       }
     </style>
     </head>
@@ -88,6 +111,13 @@ table {
         <li>Sailing</li>
     </ul>
     <a href="https://www.tgk.fi">Here is a link to my golf club</a>
+    <h2>My favorite clubs to use</h2>
+    <ul class="pseudo-list">
+        <li>Driver</li>
+        <li>7 Iron</li>
+        <li>60 degree wedge</li>
+        <li>Putter</li>
+      </ul>
     <table>
     <tr>
         <th>Past courses</th>
@@ -118,5 +148,6 @@ table {
   <h3>This website is done by me</h3>
   <p>and only by me</p>
 </div>
+<div class="animation-box"></div>
     </body>
     </html>
