@@ -117,8 +117,47 @@ table {
         top: 5px;
         color: rgb(167, 117, 117);
       }
+      .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: rgb(5, 50, 250);
+  padding: 20px;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: rgb(36, 107, 131);
+  padding: 50px;
+  text-align: center;
+}
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
     </style>
     </head>
+    <div class="responsive-box">Try to make the site smaller</div>
     <body>
         <h1>Welcome to Max's first website</h1>
         <p>This is my first HTML page.</p>
@@ -156,6 +195,19 @@ table {
         <li>Putter</li>
       </ul>
       <img src="Max_GOLF.jpg" alt="Sample Image" class="filter-image">
+      <div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+</div>
+<div class="flex-container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
     <table>
     <tr>
         <th>Past courses</th>
