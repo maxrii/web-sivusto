@@ -63,6 +63,17 @@ table {
     input[type="submit"]:hover {
       background-color: #45a049;
     }
+    .transition-button {
+        background-color: rgb(2, 7, 255);
+        padding: 20px 70px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: rgb(59, 51, 51);
+      }
     </style>
     </head>
     <body>
@@ -102,6 +113,7 @@ table {
     <input type="email" id="email" name="email"><br><br>
     <input type="submit" value="Submit">
     </form>
+    <button class="transition-button">Hover me</button>
     <div class="content-box">
   <h3>This website is done by me</h3>
   <p>and only by me</p>
