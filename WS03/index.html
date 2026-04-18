@@ -104,6 +104,19 @@ table {
       .filter-image:hover {
         filter: grayscale(0%);
       }
+      .quote {
+        position: relative;
+        padding-left: 50px;
+        font-style: arial;
+      }
+      .quote::before {
+        content: '“';
+        font-size: 50px;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        color: rgb(167, 117, 117);
+      }
     </style>
     </head>
     <body>
@@ -157,5 +170,8 @@ table {
   <p>and only by me</p>
 </div>
 <div class="animation-box"></div>
+<blockquote class="quote">
+        Css Pseudo elements
+      </blockquote>
     </body>
     </html>
