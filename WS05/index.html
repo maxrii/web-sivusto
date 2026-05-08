@@ -173,6 +173,22 @@ table {
       max-width: 75%;
       height: auto;
     }
+    .media-query-box {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .media-query-box {
+        background-color: lightcoral;
+      }
+    }
+    
+    @media (min-width: 601px) {
+      .media-query-box {
+        background-color: lightblue;
+      }
+    }
     </style>
     </head>
     <body>
@@ -227,6 +243,7 @@ table {
   <div class="box">Box 2</div>
   <div class="box">Box 3</div>
 </div>
+<div class="media-query-box">Resize the window to see the effect</div>
     <table>
     <tr>
         <th>Past courses</th>
