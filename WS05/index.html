@@ -189,6 +189,20 @@ table {
         background-color: lightblue;
       }
     }
+    .responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
     </style>
     </head>
     <body>
@@ -197,13 +211,14 @@ table {
         <p>This is my first HTML page.</p>
         <header>
   <h1>What you can find here</h1>
-  <nav>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 </header>
 <main>
   <section id="about">
