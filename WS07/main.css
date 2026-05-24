@@ -1,7 +1,8 @@
 body {background-color: rgb(148, 143, 141);}
 H1 {color: rgb(255, 255, 255); text-align: center;margin-top: 45px;padding-bottom: 45px;}
 h2 {color: rgb(255, 255, 255); text-align: center; margin-top: 45px;padding-bottom: 45px;}
-h3 {color: rgb(255, 255, 255); text-align: center; margin-top: 45px;padding-bottom: 45px;}
+h3 {color: rgb(255, 255, 255); text-align: center; margin-top: 45px;padding-bottom: 45px;font-size: 25px;}
+h4 {color: rgb(255, 255, 255); text-align: center; margin-top: 45px;padding-bottom: 45px; font-size: 20px;}
 H5 {color: rgb(255, 255, 255); text-align: center; margin-top: 45px;padding-bottom: 45px;}
 h6 {color: rgb(255, 255, 255); text-align: center; margin-top: 35px;padding-bottom: 20px;}
 picture {display: inline-block;justify-content: center; margin-left: 25px; margin-right: 25px; height: 800px; width: 400px;}
